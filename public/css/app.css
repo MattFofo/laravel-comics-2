@@ -2,6 +2,11 @@
   height: 100%;
 }
 
+.large-border {
+  height: 80px;
+  background-color: #0282F9;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;

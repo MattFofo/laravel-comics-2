@@ -4,6 +4,7 @@
 
 @section('content')
 <main>
+    <div class="large-border"></div>
     <div class="container">
         <div class="top-content">
             <h2>{{$comic[0]['title']}}</h2>
@@ -14,7 +15,7 @@
                 <div>Check Avaiability</div>
             </div>
             <p>{{ $comic[0]['description'] }}</p>
-            <img src="{{ asset('images/adv.jpg') }}" alt="">
+            <img src="{{ asset('images/lol.jpg') }}" alt="">
         </div>
 
         <div class="bot-content">
