@@ -104,12 +104,12 @@ Route::get('/shop', function () {
 })->name('shop');
 
 
-Route::get('/comic/{nome}', function ($nome) {
+Route::get('/comic/{id}', function ($id) {
     $data = collect(config('comics'));
-    $selectedComic = $data->where('title', $nome);
+    $selectedComics = $data->where('id', $id);
+    $selectedComic = array_values($selectedComics->all());
 
-
-    // @dd($nome, $data, $selectedComic );
+    // @dd($id, $data, $selectedComic );
 
     return view('guest.comic', ['comic' =>  $selectedComic]);
 })->name('comic');

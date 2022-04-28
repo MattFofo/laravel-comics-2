@@ -9,7 +9,7 @@
                 <div class="content-tag">CURRENT SERIES</div>
                 @foreach ($comics as $comic)
                 <div class="comic-card">
-                    <a href="/comic/{{  $comic['title'] }}">
+                    <a href="/comic/{{  $comic['id'] }}">
                         <img src="{{ $comic['thumb'] }}" alt="">
                         <h2>{{ $comic['title'] }}</h2>
                     </a>
